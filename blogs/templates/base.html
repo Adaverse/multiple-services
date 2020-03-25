@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blog Post</title>
+    <style type="text/css">
+      .error {color: red} 
+    </style>
+</head>
+<body>
+<form method="post">
+	<h1>Post your blog now</h1>
+
+	<br>
+	<h2>Title</h2>
+	<textarea name = 'subject' style = 'height: 20px; width: 400px;'>{{subject}}</textarea>
+
+	<td class = 'error'>{{error_subject}}</td>
+
+	<br>
+	<h2>Blog</h2>
+	<textarea name = 'content' style = 'height: 200px; width: 400px;'>{{content}}</textarea>
+
+	<td class = 'error'>{{error_content}}</td>
+
+	<br><br>
+	<input type='submit'>
+
+	
+</form>
+</body>
+</html>
+

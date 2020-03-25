@@ -1,0 +1,7 @@
+{% for blog in blogs %}
+	<div class = 'blog'>
+		<div class = blog-subject>{{blog.subject}}</div>
+		<pre class = blog-content>{{blog.content}}</pre>
+		<br>
+	</div>
+{% endfor %}

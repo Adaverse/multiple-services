@@ -1,0 +1,10 @@
+<h1>Here are most recent blogs</h1>
+
+{% for blog in blogs %}
+
+	<div class = 'blog'>
+		<div class = blog-subject><li><h2>{{blog.subject}}</h2></li></div>
+		<pre class = blog-content>{{blog.content}}</pre>
+		<br>
+	</div>
+{% endfor %}
