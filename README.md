@@ -34,3 +34,5 @@ The above function takes template and parameters and replacing the variables in 
 	def render(self, template, **kw):
 		self.write(self.render_str(template, **kw))
 This final function combines the other two into one convenient function.
+
+This handler class is inherited by all other handlers and this generic handler inherits form ```webapp2.RequestHandler```
