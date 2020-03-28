@@ -31,6 +31,7 @@ class Handler(webapp2.RequestHandler):
 
 class BlogsHandler(Handler):
 	def get(self):
+		# Query to excess the datastore
 		blogs = db.GqlQuery('SELECT * FROM Blog ORDER BY created DESC LIMIT 5')
 		self.render('blogs.html', blogs = blogs)
 
